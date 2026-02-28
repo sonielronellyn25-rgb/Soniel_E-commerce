@@ -1,0 +1,738 @@
+.home-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #1f1f1f;
+  background: #f5f0ea;
+  padding: 24px 0 40px;
+  line-height: 1.5;
+}
+
+.wf-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 4%;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  margin: 0 4%;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: wfFadeDown 0.6s ease;
+}
+
+.wf-topbar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 26px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-icon {
+  font-size: 20px;
+}
+
+.brand-accent {
+  color: #c25b2a;
+}
+
+.wf-logo {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #1f1f1f;
+  border-radius: 6px;
+}
+
+.wf-logo.small {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 8px;
+}
+
+.wf-nav {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.wf-nav a {
+  text-decoration: none;
+  color: #1f1f1f;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+
+.wf-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #c25b2a;
+  transition: width 0.25s ease;
+}
+
+.wf-nav a:hover {
+  color: #c25b2a;
+}
+
+.wf-nav a:hover::after {
+  width: 100%;
+}
+
+.wf-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #faf6f0;
+  border: 1px solid #d6cfc7;
+  border-radius: 999px;
+  padding: 6px 10px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+  min-width: 180px;
+}
+
+.search-btn {
+  border: none;
+  background: #c25b2a;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar:focus-within {
+  border: 1px solid rgba(194, 91, 42, 0.5);
+  box-shadow: 0 0 0 3px rgba(194, 91, 42, 0.12);
+}
+
+.search-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 14px rgba(194, 91, 42, 0.2);
+}
+
+.wf-cart {
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #c25b2a;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.wf-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding: 28px 4% 34px;
+  background: #f7ede2;
+  margin: 0 4%;
+  border-radius: 0 0 16px 16px;
+  align-items: center;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.06);
+  animation: wfFadeUp 0.7s ease;
+}
+
+.wf-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.wf-follow {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #6f6f6f;
+}
+
+.wf-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wf-kicker {
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #8a6a53;
+}
+
+.wf-hero-content h1 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.15;
+}
+
+.wf-subtitle {
+  max-width: 360px;
+  color: #6f5a4a;
+  font-size: 13px;
+}
+
+.wf-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background: #c25b2a;
+  color: #ffffff;
+  font-size: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.wf-btn.ghost {
+  background: #ffffff;
+  color: #7a5b46;
+  border: 1px solid #d6cfc7;
+}
+
+.wf-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.12);
+}
+
+.wf-btn:active {
+  transform: translateY(0);
+}
+
+.wf-btn:focus-visible {
+  outline: 2px solid rgba(194, 91, 42, 0.5);
+  outline-offset: 2px;
+}
+
+.wf-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.wf-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #bdbdbd;
+}
+
+.wf-dot.active {
+  background: #1f1f1f;
+}
+
+.wf-hero-image {
+  width: 100%;
+  height: 260px;
+  background: #f0f0f0;
+  border: 1px solid #d7c9bb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.hero-photo {
+  background-image: url("https://learn.surlatable.com/wp-content/uploads/2023/02/Essential-Cookware.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+}
+
+.wf-hero-image:hover {
+  transform: scale(1.02);
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-perks {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #6f5a4a;
+}
+
+.hero-perks p {
+  margin: 4px 0 0;
+}
+
+.wf-collections {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 18px;
+  margin: 26px 4% 0;
+}
+
+.wf-collection-card {
+  background: #e3e3e3;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.06);
+}
+
+.wf-collection-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+}
+
+.wf-collection-card.large {
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+.wf-collection-card.wide {
+  justify-content: space-between;
+}
+
+.wf-collection-card.small {
+  flex: 1;
+  min-height: 120px;
+}
+
+.wf-collection-image {
+  background: #f0f0f0;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.wf-collection-card:hover .wf-collection-image {
+  transform: scale(1.04);
+}
+
+.wf-collection-image.large {
+  width: 180px;
+  height: 180px;
+}
+
+.wf-collection-image.small {
+  width: 80px;
+  height: 80px;
+}
+
+.wf-collection-image.tiny {
+  width: 60px;
+  height: 60px;
+}
+
+.wf-collection-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.wf-collection-row {
+  display: flex;
+  gap: 18px;
+}
+
+.wf-mini {
+  margin: 6px 0 8px;
+  font-size: 12px;
+  color: #6f6f6f;
+}
+
+.wf-trendy {
+  margin: 28px 4% 10px;
+  text-align: center;
+  animation: wfFadeUp 0.7s ease;
+}
+
+.wf-trendy h2 {
+  margin: 0 0 10px;
+}
+
+.section-sub {
+  margin: 0;
+  color: #6f5a4a;
+  font-size: 13px;
+}
+
+.wf-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.wf-tabs button {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+  padding-bottom: 4px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.wf-tabs button:hover {
+  color: #1f1f1f;
+  transform: translateY(-1px);
+}
+
+.wf-tabs button.active {
+  color: #1f1f1f;
+  border-bottom: 2px solid #1f1f1f;
+}
+
+.card-grid {
+  padding: 10px 4% 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.wf-load-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.promo-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 20px 4%;
+}
+
+.promo-card {
+  background: #e6dbc9;
+  border-radius: 16px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 12px;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.08);
+}
+
+.promo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 26px rgba(0, 0, 0, 0.12);
+}
+
+.promo-card h3 {
+  margin: 0 0 6px;
+}
+
+.promo-card p {
+  margin: 0 0 12px;
+  color: #6f5a4a;
+  font-size: 13px;
+}
+
+.promo-image {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #d2c4b5;
+  transition: transform 0.3s ease;
+}
+
+.promo-card:hover .promo-image {
+  transform: scale(1.03);
+}
+
+.promo-left {
+  background-image: url("https://images.getfastr.com/c6/18/e95c99e2412f99f24773a4efe0ae.webp?im=UnsharpMask;Resize,width=1536");
+}
+
+.promo-right {
+  background-image: url("https://cookaids.com/wp-content/uploads/2024/02/kitchen_essentials_for_beginners.jpg");
+}
+
+.mid-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+  padding: 0 4% 24px;
+}
+
+.category-panel,
+.review-panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #e2d8cd;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-panel:hover,
+.review-panel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.08);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.category-card {
+  text-align: center;
+  font-size: 13px;
+}
+
+.category-image {
+  height: 110px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #d2c4b5;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.04);
+}
+
+.category-image.cookware {
+  background-image: url("https://img.freepik.com/premium-photo/collection-essential-kitchen-utensils-tools_841543-26123.jpg?w=2000");
+}
+
+.category-image.bakeware {
+  background-image: url("https://tse1.mm.bing.net/th/id/OIP.IBWfIFC04FqdqeOyg2p3RQHaE0?pid=Api&P=0&h=220");
+}
+
+.category-image.tools {
+  background-image: url("https://m.media-amazon.com/images/I/81WSWngW66L._AC_SL1500_.jpg");
+}
+
+.review-card {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #faf6f0;
+  border: 1px solid #e2d8cd;
+  font-size: 13px;
+  color: #6f5a4a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
+}
+
+.review-card .stars {
+  color: #c25b2a;
+  margin-bottom: 6px;
+}
+
+.wf-footer {
+  background: #efe4d7;
+  padding: 26px 4%;
+  margin: 0 4%;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1fr;
+  gap: 24px;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.06);
+  animation: wfFadeUp 0.7s ease;
+}
+
+.wf-footer p {
+  color: #6f5a4a;
+  font-size: 12px;
+}
+
+.wf-footer-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.wf-footer-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #8f8f8f;
+}
+
+.wf-footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 18px;
+}
+
+.wf-footer-links h4 {
+  margin: 0 0 6px;
+}
+
+.wf-footer-links a {
+  color: #6f5a4a;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.wf-footer-links a:hover {
+  color: #c25b2a;
+  transform: translateX(4px);
+}
+
+.wf-subscribe {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.wf-subscribe input {
+  flex: 1;
+  border-radius: 18px;
+  border: 1px solid #d2c4b5;
+  padding: 8px 12px;
+  background: #ffffff;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wf-subscribe input:focus {
+  outline: none;
+  border: 1px solid rgba(194, 91, 42, 0.5);
+  box-shadow: 0 0 0 3px rgba(194, 91, 42, 0.12);
+}
+
+@keyframes wfFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wfFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 980px) {
+  .wf-topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    border-radius: 16px;
+  }
+
+  .wf-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    min-width: 120px;
+  }
+
+  .wf-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-row {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .mid-row {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wf-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .wf-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-perks {
+    gap: 12px;
+  }
+
+  .promo-card {
+    padding: 14px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wf-topbar,
+  .wf-hero,
+  .wf-trendy,
+  .wf-footer {
+    animation: none;
+  }
+
+  .wf-btn,
+  .promo-card,
+  .wf-collection-card,
+  .category-panel,
+  .review-panel,
+  .review-card {
+    transition: none;
+  }
+}
