@@ -17,7 +17,7 @@
   border-radius: 16px 16px 0 0;
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: wfFadeDown 0.6s ease;
+  animation: wfFadeDown 0.6s ease forwards;
 }
 
 .wf-topbar:hover {
@@ -31,6 +31,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.wf-topbar {
+  animation: wfFadeDown 0.6s ease forwards; 
 }
 
 .brand-icon {
@@ -86,6 +89,9 @@
 
 .wf-nav a:hover::after {
   width: 100%;
+}
+.wf-hero {
+  animation: wfFadeUp 0.7s ease forwards;
 }
 
 .wf-icons {
@@ -152,7 +158,7 @@
   border-radius: 0 0 16px 16px;
   align-items: center;
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.06);
-  animation: wfFadeUp 0.7s ease;
+  animation: wfFadeUp 0.7s ease forwards;
 }
 
 .wf-social {
@@ -261,6 +267,12 @@
 
 .wf-hero-image:hover {
   transform: scale(1.02);
+}
+
+.wf-trendy {
+  margin: 28px 4% 10px;
+  text-align: center;
+  animation: wfFadeUp 0.7s ease forwards;
 }
 
 .hero-cta {
@@ -563,7 +575,7 @@
   grid-template-columns: 1.2fr 2fr 1fr;
   gap: 24px;
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.06);
-  animation: wfFadeUp 0.7s ease;
+  animation: wfFadeUp 0.7s ease forwards;  
 }
 
 .wf-footer p {

@@ -25,16 +25,16 @@ function CardList() {
         "https://images.getfastr.com/c6/18/e95c99e2412f99f24773a4efe0ae.webp?im=UnsharpMask;Resize,width=1536"
     },
     {
-      id: 3,
-      name: "Kitchen Essentials for Beginners",
-      price: "99",
-      salePrice: "79",
-      category: "Starter Kits",
-      reviews: "540+ reviews",
-      description: "Everything a new kitchen needs to cook with confidence.",
-      image:
-        "https://cookaids.com/wp-content/uploads/2024/02/kitchen_essentials_for_beginners.jpg"
-    },
+  id: 3,
+  name: "Kitchen Essentials for Beginners",
+  price: "99",
+  salePrice: "79",
+  category: "Starter Kits",
+  reviews: "540+ reviews",
+  description: "Everything a new kitchen needs to cook with confidence.",
+    image:
+   "https://d3u6rw3el7jk28.cloudfront.net/images/detailed/12/kitchen_utensils.png?t=1741784635"
+},
     {
       id: 4,
       name: "Stainless Steel Stockpot",
